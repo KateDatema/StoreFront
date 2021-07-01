@@ -1,0 +1,21 @@
+﻿
+
+@model Product
+<form method="post">
+
+    <div>Name:</div>
+    <input value="@Model.Name" type="text" maxlength="25" name="Name" required />
+    <br />
+    <div>Price:</div>
+    <input value="@Model.Price" type="number" name="Price" required />
+    <br />
+    <div>Quantity:</div>
+    <input value="@Model.Quantity" type="number" name="Quantity" />
+    <br />
+
+    <div>Description:</div>
+    <input value="@Model.Description" type="text" maxlength="150"name="Description" />
+    <br />
+    <br />
+    <input type="submit" />
+</form>

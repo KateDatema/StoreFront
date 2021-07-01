@@ -1,0 +1,19 @@
+﻿@model Product
+
+<div>
+    <h2> @Model.Name</h2>
+    <b>Id: </b> @Model.Id <br />
+    <b>Price: </b> @Model.Price <br />
+    <b>Quantity: </b> @Model.Quantity <br />
+    <b>Description: </b> @Model.Description
+</div>
+
+<form method="post">
+    <input type="hidden" value="@Model.Name" name="Name" />
+    <input type="hidden" value="@Model.Id" name="Id"/>
+    <input type="hidden" value="@Model.Price" name="Price" />
+    <input type="hidden" value="@Model.Quantity" name="Quantity" />
+    <input type="hidden" value="@Model.Description" name="Description"/>
+    <br />
+    <input type="submit" value="Delete @Model.Name" />
+</form>

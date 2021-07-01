@@ -1,0 +1,15 @@
+﻿<h2>
+    Thank you for Replenishing the stock!
+</h2> 
+
+@foreach (Product p in Model)
+{
+    <span>
+        <br />
+        <b>@p.Name<br /></b>
+        Quantity: @p.Quantity<br />
+        <br />
+
+    </span>
+    <hr />
+}

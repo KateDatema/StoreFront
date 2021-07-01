@@ -1,0 +1,22 @@
+﻿<h4><a asp-action="Add" asp-controller="Product">Add a new Product</a></h4>
+<hr />
+
+<h4><a asp-action="Replenish" asp-controller="Product">Replenish</a></h4>
+<hr />
+
+@foreach (Product p in Model)
+{
+    <span>
+        <br />
+        <b>@p.Name<br /></b>
+        Quantity: @p.Quantity<br />
+        <a asp-action="Delete" asp-controller="Product" asp-route-Id="@p.Id">Delete</a> <br />
+        <a asp-action="Update" asp-controller="Product" asp-route-Id="@p.Id">Update</a> <br />
+        <a asp-action="Details" asp-controller="Product" asp-route-Id="@p.Id">Details</a><br />
+
+        <br />
+
+    </span>
+    <hr />
+}
+
